@@ -4,12 +4,12 @@ $('#1-btn').click(function() {
     $('#2-win').hide(true);
 	$('#3-win').hide(true);
 	$('#settings-win').hide(true);
-	$('#active').addClass('act-btn-1');
-	$('#active').removeClass('act-btn-2');
-	$('#active').removeClass('act-btn-3');
-	$('#active').removeClass('act-btn-4');
-	$('#active').removeClass('act-btn-5');
-	$('#active').removeClass('act-settings-btn');	
+	$('#s-sab').addClass('active-nav');	
+	$('#s-sb').removeClass('active-nav');
+	$('#s-cp').removeClass('active-nav');
+	$('#s-hp').removeClass('active-nav');
+	$('#s-mc').removeClass('active-nav');	
+	$('#s-settings').removeClass('active-nav');	
   });
 });
 $(function() {
@@ -18,12 +18,12 @@ $('#2-btn').click(function() {
     $('#2-win').show(true);
 	$('#3-win').hide(true);
 	$('#settings-win').hide(true);
-	$('#active').removeClass('act-btn-1');	
-	$('#active').addClass('act-btn-2');
-	$('#active').removeClass('act-btn-3');
-	$('#active').removeClass('act-btn-4');
-	$('#active').removeClass('act-btn-5');	
-	$('#active').removeClass('act-settings-btn');	
+	$('#s-sab').removeClass('active-nav');	
+	$('#s-sb').addClass('active-nav');
+	$('#s-cp').removeClass('active-nav');
+	$('#s-hp').removeClass('active-nav');
+	$('#s-mc').removeClass('active-nav');	
+	$('#s-settings').removeClass('active-nav');	
   });
 });
 $(function() {
@@ -32,12 +32,12 @@ $('#3-btn').click(function() {
     $('#2-win').hide(true);
 	$('#3-win').show(true);
 	$('#settings-win').hide(true);
-	$('#active').removeClass('act-btn-1');	
-	$('#active').removeClass('act-btn-2');
-	$('#active').addClass('act-btn-3');	
-	$('#active').removeClass('act-btn-4');
-	$('#active').removeClass('act-btn-5');
-	$('#active').removeClass('act-settings-btn');	
+	$('#s-sab').removeClass('active-nav');	
+	$('#s-sb').removeClass('active-nav');
+	$('#s-cp').addClass('active-nav');
+	$('#s-hp').removeClass('active-nav');
+	$('#s-mc').removeClass('active-nav');	
+	$('#s-settings').removeClass('active-nav');	
   });
 });
 $(function() {
@@ -46,12 +46,12 @@ $('#4-btn').click(function() {
     $('#2-win').hide(true);
 	$('#3-win').show(true);
 	$('#settings-win').hide(true);
-	$('#active').removeClass('act-btn-1');	
-	$('#active').removeClass('act-btn-2');
-	$('#active').removeClass('act-btn-3');	
-	$('#active').addClass('act-btn-4');
-	$('#active').removeClass('act-btn-5');
-	$('#active').removeClass('act-settings-btn');	
+	$('#s-sab').removeClass('active-nav');	
+	$('#s-sb').removeClass('active-nav');
+	$('#s-cp').removeClass('active-nav');
+	$('#s-hp').addClass('active-nav');
+	$('#s-mc').removeClass('active-nav');	
+	$('#s-settings').removeClass('active-nav');	
   });
 });
 $(function() {
@@ -60,12 +60,12 @@ $('#5-btn').click(function() {
     $('#2-win').hide(true);
 	$('#3-win').show(true);
 	$('#settings-win').hide(true);
-	$('#active').removeClass('act-btn-1');	
-	$('#active').removeClass('act-btn-2');
-	$('#active').removeClass('act-btn-3');	
-	$('#active').removeClass('act-btn-4');
-	$('#active').addClass('act-btn-5');
-	$('#active').removeClass('act-settings-btn');	
+	$('#s-sab').removeClass('active-nav');	
+	$('#s-sb').removeClass('active-nav');
+	$('#s-cp').removeClass('active-nav');
+	$('#s-hp').removeClass('active-nav');
+	$('#s-mc').addClass('active-nav');	
+	$('#s-settings').removeClass('active-nav');
   });
 });
 $(function() {
@@ -74,9 +74,11 @@ $('#settings-btn').click(function() {
     $('#2-win').hide(true);
 	$('#3-win').hide(true);
 	$('#settings-win').show(true);
-	$('#active').removeClass('act-btn-1');	
-	$('#active').removeClass('act-btn-2');	
-	$('#active').removeClass('act-btn-3');
-	$('#active').addClass('act-settings-btn');
+	$('#s-sab').removeClass('active-nav');	
+	$('#s-sb').removeClass('active-nav');
+	$('#s-cp').removeClass('active-nav');
+	$('#s-hp').removeClass('active-nav');
+	$('#s-mc').removeClass('active-nav');	
+	$('#s-settings').addClass('active-nav');
   });
 });

@@ -11,11 +11,19 @@ body, html {
 body {
 	background-color:#CCC;
 }
+#nav-wrapper-outter {
+	width:100%;
+}
+#nav-wrapper-inner {
+	float:left; 
+	width:70px; 
+	height:100vh;
+}
 #nav {
 	width:70px;
 	height:100%;
 	overflow:scroll;
-	background-color:#333;
+	background-image: url(img/bg.png);
 	border-right: solid 1px #000;
 	box-shadow:1px 0 4px #000;
 	position:absolute;
@@ -31,8 +39,18 @@ nav li {
 	height:70px;
 	width:70px;
 	background-repeat:repeat;
-	border-bottom:solid 1px #000;
-	border-top: solid 1px #333;		
+/*	border-bottom:solid 1px #000;
+	border-top: solid 1px #333;*/		
+}
+#border-btm {
+	width:70px;
+	height:1px;
+	background-color:#333;
+}
+#border-top {
+	width:70px;
+	height:1px;
+	background-color:#000;
 }
 nav a {
 	text-decoration:none;
@@ -42,22 +60,26 @@ nav a {
 	background-repeat: no-repeat;
 }
 #s-sab {
-	background-image:url(img/sab-icon.png), url(img/bg.png);	
+	background-image:url(img/sab-icon.png)/*, url(img/bg.png)*/;
 }
 #s-sb {
-	background-image:url(img/sb-icon.png), url(img/bg.png);
+	background-image:url(img/sb-icon.png);
 }
 #s-cp {
-	background-image:url(img/cp-icon.png), url(img/bg.png);
+	background-image:url(img/cp-icon.png);
 }
 #s-settings {
-	background-image:url(img/cog.png), url(img/bg.png);
+	background-image:url(img/cog.png);
 }
 #s-hp {
-	background-image:url(img/hp-icon.png), url(img/bg.png);
+	background-image:url(img/hp-icon.png);
 }
 #s-mc {
-	background-image:url(img/mc-icon.png), url(img/bg.png);
+	background-image:url(img/mc-icon.png);
+}
+.active-nav {
+	background-color:#2E2F2F;
+	border-left:4px solid #639DF3;	
 }
 #active {
 	width:4px;
@@ -107,3 +129,63 @@ fieldset {
 	border:none;
 	margin-bottom:10px;
 }
+
+
+/*----------------------------form-----------------------------*/
+.form {
+	width:400px; 
+	height:33px;
+	border-radius:4px; 
+	border:solid 1px #999; 
+	padding-left:10px;
+	font-family: Helvetica, Arial Lucida Grande;
+	font-size:14px;
+}
+
+.login-form-input {
+	width:250px !important;
+	display:block;
+	margin:0 auto 0 auto;
+	margin-top:5px;
+}
+.post-form select, .account-form select, .login-form select {
+	outline:none;
+}
+#basicStepForm input, .account-form input, .login-form input {
+	outline:none;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+}
+
+.post-form input:focus, .account-form input:focus, .login-form input:focus {
+	box-shadow:0 0 4px #2B64BB;
+	-moz-box-shadow:0 0 4px #2B64BB;
+	-ms-box-shadow:0 0 4px #2B64BB;
+	-o-box-shadow:0 0 4px #2B64BB;
+	-webkit-box-shadow:0 0 4px #2B64BB;
+}
+textarea {
+	outline:none;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.post-form textarea, .account-form textarea, .login-form textarea {
+	outline:none;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+}
+.post-form textarea:focus, .account-form, .login-form textarea:focus {
+	box-shadow:0 0 4px #2B64BB;
+	-moz-box-shadow:0 0 4px #2B64BB;
+	-ms-box-shadow:0 0 4px #2B64BB;
+	-o-box-shadow:0 0 4px #2B64BB;
+	-webkit-box-shadow:0 0 4px #2B64BB;
+}
+
