@@ -89,23 +89,13 @@ nav a {
 	left:0;
 	z-index:2;
 }
-.act-btn-1 {
-	top:0px;
-}
-.act-btn-2 {
-	top:72px;
-}
-.act-btn-3 {
-	top:144px;
-}
-.act-btn-4 {
-	top:216px;
-}
-.act-btn-5 {
-	top:288px;
-}
 .act-settings-btn {
 	top:360px;
+}
+#content-window {
+	overflow: hidden; 
+	background-color:#CCC; 
+	height:100vh;
 }
 .iframe-wrapper {
 	/*width:1209px;
