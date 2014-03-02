@@ -30,7 +30,7 @@ E.g.
 		<div id="border-top"></div>
 	 <div id="border-btm"></div>
 
-3. Copy & paste another jquery function within the site.js file. This below will work for iframe/button 6.
+4. Copy & paste another jquery function within the site.js file. This below will work for iframe/button 6.
 e.g.
 $(function() {
 $('#6-btn').click(function() {
