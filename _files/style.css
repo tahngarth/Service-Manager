@@ -79,18 +79,8 @@ nav a {
 }
 .active-nav {
 	background-color:#2E2F2F;
-	border-left:4px solid #639DF3;	
-}
-#active {
-	width:4px;
-	height:71px;
-	position:absolute;
-	background-color:#639DF3;
-	left:0;
-	z-index:2;
-}
-.act-settings-btn {
-	top:360px;
+	border-left:4px solid #639DF3;
+	width:66px !important;
 }
 #content-window {
 	overflow: hidden; 
@@ -98,12 +88,8 @@ nav a {
 	height:100vh;
 }
 .iframe-wrapper {
-	/*width:1209px;
-	height:611px;*/
 	width:100%;
 	height:100%;
-	display:inline;
-	vertical-align: top
 }
 #settings-win {
 }
@@ -122,7 +108,7 @@ fieldset {
 
 
 /*----------------------------form-----------------------------*/
-.form {
+/*.form {
 	width:400px; 
 	height:33px;
 	border-radius:4px; 
@@ -137,11 +123,11 @@ fieldset {
 	display:block;
 	margin:0 auto 0 auto;
 	margin-top:5px;
-}
-.post-form select, .account-form select, .login-form select {
+}*/
+select {
 	outline:none;
 }
-#basicStepForm input, .account-form input, .login-form input {
+input {
 	outline:none;
 	transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -150,7 +136,7 @@ fieldset {
 	-ms-transition: all 0.25s ease-in-out;
 }
 
-.post-form input:focus, .account-form input:focus, .login-form input:focus {
+input:focus {
 	box-shadow:0 0 4px #2B64BB;
 	-moz-box-shadow:0 0 4px #2B64BB;
 	-ms-box-shadow:0 0 4px #2B64BB;
@@ -163,7 +149,7 @@ textarea {
 	padding-bottom:5px;
 }
 
-.post-form textarea, .account-form textarea, .login-form textarea {
+textarea {
 	outline:none;
 	transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
@@ -171,7 +157,7 @@ textarea {
 	-o-transition: all 0.25s ease-in-out;
 	-ms-transition: all 0.25s ease-in-out;
 }
-.post-form textarea:focus, .account-form, .login-form textarea:focus {
+textarea:focus {
 	box-shadow:0 0 4px #2B64BB;
 	-moz-box-shadow:0 0 4px #2B64BB;
 	-ms-box-shadow:0 0 4px #2B64BB;
