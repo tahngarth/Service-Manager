@@ -6,6 +6,7 @@ Web service manager for all your local gadgets such as RPi, SickBeard, SABnzbd, 
 
 This is still in the very early stages of development, so please feel free to help with any modifiactions.
 
+NOTE: ONLY TESTED ON GOOGLE CHROME
 
 INSTRUCTIONS
 ============
