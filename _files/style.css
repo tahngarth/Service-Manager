@@ -60,22 +60,18 @@ nav a {
 	background-repeat: no-repeat;
 }
 #s-sab {
-	background-image:url(img/sab-icon.png)/*, url(img/bg.png)*/;
+	/*, url(img/bg.png)*/;
 }
 #s-sb {
-	background-image:url(img/sb-icon.png);
 }
 #s-cp {
-	background-image:url(img/cp-icon.png);
+}
+#s-hp {
+}
+#s-mc {
 }
 #s-settings {
 	background-image:url(img/cog.png);
-}
-#s-hp {
-	background-image:url(img/hp-icon.png);
-}
-#s-mc {
-	background-image:url(img/mc-icon.png);
 }
 .active-nav {
 	background-color:#2E2F2F;
@@ -105,8 +101,18 @@ fieldset {
 	border:none;
 	margin-bottom:10px;
 }
-
-
+#reload-btn {
+	width:20px;
+	height:20px;
+	background-repeat:no-repeat;
+	background-position:center;
+	display:inline-block;
+	margin-top:3px;
+	background-image:url(img/reload-icon.png);
+}
+#reload-btn:hover {
+	background-image:url(img/reload-icon2.png);
+}
 /*----------------------------form-----------------------------*/
 /*.form {
 	width:400px; 
