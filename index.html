@@ -7,8 +7,11 @@
 <script type="text/javascript" src="_files/jquery/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="_files/js/site.js"></script>
 <script type="text/javascript">
+/*function id () {
+	var winId = ('')
+}*/
 function Reload () {
-var f = document.getElementById('2-win');
+var f = document.getElementById('1-win');
 f.src = f.src;
 }
 </script>
@@ -29,12 +32,12 @@ f.src = f.src;
                     <div id="border-btm"></div>
            
                <!--------------button 1-------------------->
-               <a id="1-btn" href="#" onClick=""><li class="icon active-nav" id="s-sab" style="background-image:url(_files/img/sab-icon.png);"></li></a>
+               <a id="1-btn" href="#"><li class="icon active-nav" id="s-sab" style="background-image:url(_files/img/sab-icon.png);"></li></a>
                		<div id="border-top"></div>
                     <div id="border-btm"></div>
                
                <!--------------button 2-------------------->
-               <a id="2-btn" href="#" onClick=""><li class="icon" id="s-sb" style="background-image:url(_files/img/sb-icon.png);"></li></a>
+               <a id="2-btn" onClick="winId(2-win);" href="#"><li class="icon" id="s-sb" style="background-image:url(_files/img/sb-icon.png);"></li></a>
                		<div id="border-top"></div>
                     <div id="border-btm"></div>
                     
@@ -67,13 +70,13 @@ f.src = f.src;
   <div id="content-window">
     
     	<!--------------iframe 1-------------------->
-    	<iframe class="iframe-wrapper" id="1-win" src="http://localhost:8080" frameborder="0"></iframe>
+    	<iframe class="iframe-wrapper" id="1-win" src="http://192.168.2.142:8080" frameborder="0"></iframe>
 		
         <!--------------iframe 2-------------------->
 		<iframe class="iframe-wrapper none" id="2-win" src="http://192.168.2.143:8081" frameborder="0"></iframe>
    		
         <!--------------iframe 3-------------------->     
-        <iframe class="iframe-wrapper none" id="3-win" src="http://apple.com" frameborder="0"></iframe>
+        <iframe class="iframe-wrapper none" id="3-win" src="http://192.168.2.144:5050" frameborder="0"></iframe>
 
 		<!--------------iframe 4-------------------->
         <iframe class="iframe-wrapper none" id="4-win" src="http://apple.com" frameborder="0"></iframe>

@@ -108,6 +108,7 @@ fieldset {
 	background-position:center;
 	display:inline-block;
 	margin-top:3px;
+	margin-left:6px;
 	background-image:url(img/reload-icon.png);
 }
 #reload-btn:hover {
