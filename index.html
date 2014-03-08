@@ -7,14 +7,14 @@
 <script type="text/javascript" src="_files/jquery/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="_files/js/site.js"></script>
 <script type="text/javascript">
-
-var varId = '2-win'; 
-
-function Reload () {
-var f = document.getElementById(varId);
-f.src = f.src;
+function Reload()
+{
+	$("iframe").each(function() 
+	{
+		if($(this).is(':visible'))
+			$(this).attr('src', $(this).attr('src'));
+	});
 }
-
 </script>
 <!--Blocks sites from indexing page - Strongly recommend that you do not allow access to this page via WAN as other would be able to controll your services.-->
 <meta name="robots" content="noindex">
@@ -28,7 +28,7 @@ f.src = f.src;
         <nav id="nav">
             <ul>
             
-               <!----------------Reload Button-------------->
+               <!----------------Reload Button------------->
                <a id="reload-btn" href="#" onClick="Reload();"></a>
                <div id="border-top"></div>
                <div id="border-btm"></div>
@@ -39,7 +39,7 @@ f.src = f.src;
                     <div id="border-btm"></div>
                
                <!--------------button 2-------------------->
-               <a id="2-btn" onClick="document.getElementById(varId).id='2-win';" href="#"><li class="icon" id="s-sb" style="background-image:url(_files/img/sb-icon.png);"></li></a>
+               <a id="2-btn" href="#"><li class="icon" id="s-sb" style="background-image:url(_files/img/sb-icon.png);"></li></a>
                		<div id="border-top"></div>
                     <div id="border-btm"></div>
                     
@@ -72,13 +72,13 @@ f.src = f.src;
   <div id="content-window">
     
     	<!--------------iframe 1-------------------->
-    	<iframe class="iframe-wrapper" id="1-win" src="http://username:password@192.168.2.142:8080/" frameborder="0"></iframe>
+    	<iframe class="iframe-wrapper" id="1-win" src="http://192.168.2.142:8080/" frameborder="0"></iframe>
 		
         <!--------------iframe 2-------------------->
-		<iframe class="iframe-wrapper none" id="2-win" src="http://username:password@192.168.2.143:8081" frameborder="0"></iframe>
+		<iframe class="iframe-wrapper none" id="2-win" src="http://192.168.2.143:8081" frameborder="0"></iframe>
    		
         <!--------------iframe 3-------------------->     
-        <iframe class="iframe-wrapper none" id="3-win" src="http://username:password@192.168.2.144:5050" frameborder="0"></iframe>
+        <iframe class="iframe-wrapper none" id="3-win" src="http://192.168.2.144:5050" frameborder="0"></iframe>
 
 		<!--------------iframe 4-------------------->
         <iframe class="iframe-wrapper none" id="4-win" src="http://192.168.2.11:8181/home" frameborder="0"></iframe>
@@ -90,30 +90,17 @@ f.src = f.src;
     	<!--------------Settings page---------------------->
         <div class="iframe-wrapper none" id="settings-win">
         	<div id="form-wrapper">
-        		<form>
+        		<form class="form">
                 	<fieldset>
                 	<label>1</label>
                 	<input type="text" id="" name="" placeholder="name" >
                     <input type="text" id="" name="" placeholder="url" >
                     <input type="text" id="" name="" placeholder="icon url" >
+                    <input type="file">
                     <input type="submit">
                     </fieldset>
                     
-                    <fieldset>
-                    <label>2</label>
-                	<input type="text" id="" name="" placeholder="name" >
-                    <input type="text" id="" name="" placeholder="url" >
-                    <input type="text" id="" name="" placeholder="icon url" >
-                    <input type="submit">
-                    </fieldset>
-                    
-                    <fieldset>
-                    <label>3</label>
-                	<input type="text" id="" name="" placeholder="name" >
-                    <input type="text" id="" name="" placeholder="url" >
-                    <input type="text" id="" name="" placeholder="icon url" >
-                    <input type="submit">
-                    </fieldset>
+                 
                 </form>
         	</div>
         </div>
