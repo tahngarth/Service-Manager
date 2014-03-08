@@ -115,7 +115,7 @@ fieldset {
 	background-image:url(img/reload-icon2.png);
 }
 /*----------------------------form-----------------------------*/
-/*.form {
+.form {
 	width:400px; 
 	height:33px;
 	border-radius:4px; 
@@ -124,13 +124,6 @@ fieldset {
 	font-family: Helvetica, Arial Lucida Grande;
 	font-size:14px;
 }
-
-.login-form-input {
-	width:250px !important;
-	display:block;
-	margin:0 auto 0 auto;
-	margin-top:5px;
-}*/
 select {
 	outline:none;
 }
@@ -150,25 +143,5 @@ input:focus {
 	-o-box-shadow:0 0 4px #2B64BB;
 	-webkit-box-shadow:0 0 4px #2B64BB;
 }
-textarea {
-	outline:none;
-	padding-top:5px;
-	padding-bottom:5px;
-}
 
-textarea {
-	outline:none;
-	transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-	-o-transition: all 0.25s ease-in-out;
-	-ms-transition: all 0.25s ease-in-out;
-}
-textarea:focus {
-	box-shadow:0 0 4px #2B64BB;
-	-moz-box-shadow:0 0 4px #2B64BB;
-	-ms-box-shadow:0 0 4px #2B64BB;
-	-o-box-shadow:0 0 4px #2B64BB;
-	-webkit-box-shadow:0 0 4px #2B64BB;
-}
 
