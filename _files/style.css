@@ -88,6 +88,7 @@ nav a {
 	height:100%;
 }
 #settings-win {
+	background-color:#434343;
 }
 .none {
 	display:none;
@@ -116,18 +117,26 @@ fieldset {
 }
 /*----------------------------form-----------------------------*/
 .form {
-	width:400px; 
-	height:33px;
+	padding-top:200px;
 	border-radius:4px; 
-	border:solid 1px #999; 
-	padding-left:10px;
+	/*border:solid 1px #999;*/ 
 	font-family: Helvetica, Arial Lucida Grande;
 	font-size:14px;
 }
 select {
 	outline:none;
 }
+fieldset {
+    
+}
 input {
+	width:150px;
+	height:25px;
+	border: solid 1px #B5B5B6;
+	border-radius:3px;
+	padding-left:10px;
+	margin-right:20px;
+	
 	outline:none;
 	transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
