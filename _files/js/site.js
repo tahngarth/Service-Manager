@@ -83,6 +83,8 @@ $('#settings-btn').click(function() {
     $('#1-win').hide(true);
     $('#2-win').hide(true);
 	$('#3-win').hide(true);
+	$('#4-win').hide(true);
+	$('#5-win').hide(true);
 	$('#settings-win').show(true);
 	$('#s-sab').removeClass('active-nav');	
 	$('#s-sb').removeClass('active-nav');
