@@ -6,7 +6,7 @@
 	padding:0;
 }
 body, html {
-	
+	background-color:#434343;
 }
 .btn {
 	text-align:center;
@@ -15,7 +15,6 @@ body, html {
 	cursor:pointer; 
 }
 body {
-	background-color:#CCC;
 }
 #nav-wrapper-outter {
 	width:100%;
@@ -86,7 +85,7 @@ nav a {
 }
 #content-window {
 	overflow: hidden; 
-	background-color:#CCC; 
+	 
 	height:100vh;
 }
 .iframe-wrapper {
@@ -94,7 +93,6 @@ nav a {
 	height:100%;
 }
 #settings-win {
-	background-color:#434343;
 }
 .none {
 	display:none;
