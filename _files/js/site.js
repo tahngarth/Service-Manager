@@ -66,7 +66,7 @@ $(function() {
 $('#5-btn').click(function() {
     $('#1-win').hide(true);
     $('#2-win').hide(true);
-	$('#3-win').show(true);
+	$('#3-win').hide(true);
 	$('#4-win').hide(true);
 	$('#5-win').show(true);
 	$('#settings-win').hide(true);
