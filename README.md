@@ -6,19 +6,29 @@ Web service manager for all your local gadgets such as RPi, SickBeard, SABnzbd, 
 This is still in the very early stages of development, so please feel free to help with any modifiactions.
 
 NOTE: ONLY TESTED ON GOOGLE CHROME
+—————
+
+#### Security
+
+Please keep in mind that Service Manager can be vulnerable to security issues depending on how you utilise it. For e.g if you setup SM accessible through WAN other people on the internet could gain access to your setup services and make changes to them. Additionally, if you store username & password within your URL to auto login to services, these people can then see these. We recommend you do not allow WAN access for SM until we have added security protection for this in the future. If you are a developer and wish to help with this please do. 
 
 ### Instructions
-
+====
 ##### Getting it to work:
 
-1. Change the url for each iframe. Currently, there are 5 iframes. To do this change the `src=“”` within the iframes to your required url of your service you wish to use. e.g. `src=“http://192.168.2.3:8080”`
+Change the url for each iframe. Currently, there are 5 iframes. To do this change the `src=“”` within the iframes to your required url of your service you wish to use. e.g. `src=“http://192.168.2.3:8080”`
 
+##### Adding Username and Passwords to URL for auto login
+
+If you wish to be auto logged into services you can do so by modifying your from the normal `src=“http:192.168.2.148:8080”` to `src="http://user:pass@localhost:8080/“`.
+
+Keep in mind, this is a security issue if SM has WAN access. If it’s just on your LAN, then it’s fine.
 
 ##### Adding more iframes:
 
 1. Copy & paste the last iframe 
 e.g. `<iframe class="iframe-wrapper none" id="5-win" src="http://apple.com" frameborder="0"></iframe>`
-change the id to the next number e.g. 6,7,8 etc. 
+change the id to the next number e.g. 6-win, 7-win, 8-win etc. 
 
 2. Change the url as needed.
 
