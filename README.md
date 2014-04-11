@@ -12,7 +12,8 @@ NOTE: ONLY TESTED ON GOOGLE CHROME
 
 Please keep in mind that Service Manager can be vulnerable to security issues depending on how you utilise it. For e.g if you setup SM accessible through WAN other people on the internet could gain access to your setup services and make changes to them. Additionally, if you store username & password within your URL to auto login to services, these people can then see these. We recommend you do not allow WAN access for SM until we have added security protection for this in the future. If you are a developer and wish to help with this please do. 
 
-### Instructions===
+### Instructions
+--
 
 ##### Getting it to work:
 
@@ -32,8 +33,7 @@ change the id to the next number e.g. 6-win, 7-win, 8-win etc.
 
 2. Change the url as needed.
 
-3. Copy & paste another button.
-E.g. 
+3. Copy & paste another button. E.g. 
 ```html
 <!--------------button 6-------------------->
 <a id="6-btn" href="#"><li class="icon" id="s-NEW-ID-ENTERED-HERE"></li></a>
@@ -42,7 +42,7 @@ E.g.
 ```
 4. Copy & paste another jquery function within the site.js file. This below will work for iframe/button 6.
 e.g.
-```jquery
+```
 $(function() {
 $('#6-btn').click(function() {
 	$('#1-win').hide(true);
