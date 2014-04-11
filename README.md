@@ -9,12 +9,12 @@ NOTE: ONLY TESTED ON GOOGLE CHROME
 
 ### Instructions
 
-Getting it to work:
+##### Getting it to work:
 
 1. Change the url for each iframe. Currently, there are 5 iframes. To do this change the `src=“”` within the iframes to your required url of your service you wish to use. e.g. `src=“http://192.168.2.3:8080”`
 
 
-Adding more iframes:
+##### Adding more iframes:
 
 1. Copy & paste the last iframe 
 e.g. `<iframe class="iframe-wrapper none" id="5-win" src="http://apple.com" frameborder="0"></iframe>`
@@ -30,7 +30,6 @@ E.g.
 		<div id="border-top"></div>
 	 <div id="border-btm"></div>
 ```
-
 4. Copy & paste another jquery function within the site.js file. This below will work for iframe/button 6.
 e.g.
 ```jquery
@@ -50,8 +49,7 @@ $('#6-btn').click(function() {
   });
 });
 ```
-
-Additionally, you will need to add 
+5. Additionally, you will need to add 
 `$(‘#s-NEW-ID-ENTERED-HERE').removeClass('active-nav’);`	
 to every other function in the site.js file.
 
