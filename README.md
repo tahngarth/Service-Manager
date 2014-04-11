@@ -1,4 +1,4 @@
-#Service-Manager
+# Service-Manager
 
 Web service manager for all your local gadgets such as RPi, SickBeard, SABnzbd, CouchPotato etc. It is design to allow you to open 1 page where you can view all of your services kinda like bookmarks. Every page stays loaded and loads in the background so you can switch back and forth. This will need to be loaded onto your local server to be able to run it (or you can use it locally on your computer without the need for MAMP at this stage).
 
@@ -7,11 +7,13 @@ This is still in the very early stages of development, so please feel free to he
 
 NOTE: ONLY TESTED ON GOOGLE CHROME
 
-##INSTRUCTIONS
+### Instructions
 
 Getting it to work:
 
-1. Change the url for each iframe. Currently, there are 5 iframes. To do this change the ‘src=“”’ within the iframes to your required url of your service you wish to use. e.g. ‘src=“http://192.168.2.3:8080”’
+1. Change the url for each iframe. Currently, there are 5 iframes. To do this change the ‘src=“”’ within the iframes to your required url of your service you wish to use. e.g. ‘’’
+src=“http://192.168.2.3:8080”
+‘’’
 
 
 Adding more iframes:
