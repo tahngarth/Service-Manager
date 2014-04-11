@@ -11,9 +11,11 @@ NOTE: ONLY TESTED ON GOOGLE CHROME
 #### Security
 
 Please keep in mind that Service Manager can be vulnerable to security issues depending on how you utilise it. For e.g if you setup SM accessible through WAN other people on the internet could gain access to your setup services and make changes to them. Additionally, if you store username & password within your URL to auto login to services, these people can then see these. We recommend you do not allow WAN access for SM until we have added security protection for this in the future. If you are a developer and wish to help with this please do. 
+***
 
 ### Instructions
 --
+
 
 ##### Getting it to work:
 
